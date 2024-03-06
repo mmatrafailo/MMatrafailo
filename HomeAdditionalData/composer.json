@@ -1,0 +1,21 @@
+{
+  "name": "m-matrafailo/module-home-additional-data",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-cms": "104.0.*"
+  },
+  "license": [
+    "Open Software License (OSL)"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "MMatrafailo\\HomeAdditionalData\\": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <home_additional_data>
+            <general>
+                <is_enabled>1</is_enabled>
+                <text>Example text.</text>
+                <text_after_enabled>0</text_after_enabled>
+                <text_after>Just some text.</text_after>
+            </general>
+        </home_additional_data>
+    </default>
+</config>

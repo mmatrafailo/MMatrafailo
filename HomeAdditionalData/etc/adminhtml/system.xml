@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mmatrafailo" translate="label" sortOrder="10">
+            <label>MMatrafailo</label>
+        </tab>
+        <section id="home_additional_data" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>Home Additional Data</label>
+            <tab>mmatrafailo</tab>
+            <resource>MMatrafailo_HomeAdditionalData::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+                <field id="is_enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable this functionality?</comment>
+                </field>
+                <field id="text" translate="label comment" type="text" sortOrder="20" showInDefault="1"
+                       canRestore="1">
+                    <label>Text</label>
+                    <comment>Text to display.</comment>
+                </field>
+                <field id="text_after_enabled" translate="label comment" type="select" sortOrder="30" showInDefault="1" canRestore="1">
+                    <label>Add Text After Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Add text after main text?</comment>
+                </field>
+                <field id="text_after" translate="label comment" type="text" sortOrder="40" showInDefault="1"
+                       canRestore="1">
+                    <label>After Text</label>
+                    <comment>Text to display after main text.</comment>
+                    <field id="home_additional_data/general/text_after_enabled">1</field>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
